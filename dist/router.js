@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.router = void 0;
-const product_controller_1 = require("./controllers/product.controller");
+const cellPhone_controller_1 = require("./controllers/cellPhone.controller");
 const router = (app) => {
-    app.post("/products", product_controller_1.createProduct);
-    app.get("/products/:id", product_controller_1.retrieveProduct);
-    app.put("/products/:id", product_controller_1.updateProduct);
-    app.delete("/products/:id", product_controller_1.deleteProduct);
-    app.get("/products", product_controller_1.listProduct);
+    app.post("/cellPhone", cellPhone_controller_1.createCellPhone);
+    app.get("/cellPhone/:id", cellPhone_controller_1.retrieveCellPhone);
+    app.put("/cellPhone/:id", cellPhone_controller_1.updateCellPhone);
+    app.delete("/cellPhone/:id", cellPhone_controller_1.deleteCellPhone);
+    app.get("/cellPhone", cellPhone_controller_1.listCellPhone);
 };
 exports.router = router;
